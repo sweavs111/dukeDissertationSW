@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.13)  22 NOV 2025 11:08
+This is pdfTeX, Version 3.141592653-2.6-1.40.26 (TeX Live 2024) (preloaded format=pdflatex 2024.9.13)  22 NOV 2025 11:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1988,7 +1988,7 @@ Package logreq Info: Writing requests to 'dissertation.run.xml'.
 Here is how much of TeX's memory you used:
  50636 strings out of 474116
  1152244 string characters out of 5743682
- 2080736 words of memory out of 5000000
+ 2081680 words of memory out of 5000000
  72060 multiletter control sequences out of 15000+600000
  616362 words of font info for 160 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
@@ -2010,7 +2010,7 @@ e/2024/texmf-dist/fonts/type1/urw/helvetic/uhvbo8a.pfb></usr/local/texlive/2024
 /texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/local/texlive/2024/texmf-
 dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/local/texlive/2024/texmf-dist/fo
 nts/type1/urw/palatino/uplri8a.pfb>
-Output written on dissertation.pdf (39 pages, 302253 bytes).
+Output written on dissertation.pdf (39 pages, 302303 bytes).
 PDF statistics:
  487 PDF objects out of 1000 (max. 8388607)
  405 compressed objects within 5 object streams
