@@ -1,0 +1,36 @@
+\chapter{Introduction}
+\label{chap:Introduction}
+
+This template was updated November 2023. The provided \LaTeX\ template is intended to be used with \texttt{pdflatex} and \texttt{biber} for bibliography management, though users may modify as needed to use the bibliographic management system of their choice.
+
+To submit your thesis/dissertation electronically, you have to agree for it to be available online through Duke University Library. During the submission process, you will be required to sign the following release in italics, below.  Don’t sign this copy, the Graduate School will give you one when you submit. 
+
+\section{Non-exclusive distribution license}
+By signing and submitting this license “the author” grants to DukeSpace at Duke University the non-exclusive right to reproduce and distribute your submission in electronic format via the World Wide Web, as well as the right to migrate or convert your submission, without alteration of the content, to any medium or format for the purpose of preservation and/or continued distribution.
+
+Duke University acknowledges that this is a non-exclusive license; any copyrights in the submission remain with the author or other copyright holder and subsequent uses of the submitted material by that person(s) are not restricted by this license.
+
+The author agrees that Duke University may keep more than one copy of this submission for purposes of security, backup and preservation.
+
+The author represents that the submission covered by this license is his/her original work and that he/she has the right to grant this license to DukeSpace at Duke University.  The author further represents that the submission does not, to the best of his/her knowledge, infringe upon any third-party’s copyright.  If the submission contains material for which the author does not hold copyright, the author represents that he/she has obtained the unrestricted permission of the copyright holder to grant this license to DukeSpace, and that such third-party material is clearly identified and acknowledged within the text or content of the submission.  In the event of a subsequent dispute over the copyrights to material contained in this submission, the author agrees to indemnify and hold harmless Duke University and its employees or agents for any uses of the material authorized by this license.
+
+If this submission is based upon work that has been sponsored or supported by any agency or organization other than Duke University, the author represents that he/she has fulfilled any right of review or other obligation required by contract or agreement with the supporting entity.
+
+DukeSpace will make the submission available to the public using a Creative Commons Attribution / Non-commercial / No derivative works license accompanied by a copyright statement indicating the author’s continuing rights.  DukeSpace will take all reasonable steps to ensure that the author’s name remains clearly associated with the submission and that no alterations of the content are made.
+
+\section{An Introduction is a requirement and always starts as Page 1}
+Paste in text from other documents, highlight headings and then use Word’s list of styles to specify the level heading it is (\verb|\chapter{}| for chapter titles, \verb|\section{}| for sections of chapters,  \verb|\subsection{}| for subsections, etc.) If you paste text into the template from another source, particularly Microsoft Word, you may be bringing along special characters that the \LaTeX\ compiler will get angry at. If your compilation fails following copy-paste, check your source for special characters and replace with the appropriate native \LaTeX\ commands.
+
+You must have an Introduction section first, and a Conclusion section at the end of your manuscript as the final chapter.
+
+\section{Sharing with Colleagues}
+To share your documents with your committee, it is suggested to either use an online \LaTeX\ environment such as Overleaf, teach your committee to use \LaTeX, or convert your source to a different file format, such as Microsoft Word or Markdown. The best tool for this conversion is pandoc. Note that some aspects of formatting, automatic figure numbering, and referencing gets very strange when converting \LaTeX\ source in this manner. If Word compatibility is required by your committee or colleagues, consider using Quarto or RMarkdown, as conversion from Markdown to Word is easier than from \LaTeX. As a sample pandoc command, see the following (note, this is just intended as a starting point, and users are encouraged to look into the syntax and ensure this works for your use case). Note also, that this will likely pop up a message asking if you want to ``Update the fields in this document,'' which you should select YES for. This pandoc command \textbf{will not} produce files acceptable for submission to the graduate school, but will be fine to use if you want to share with colleagues for editing purposes.
+
+\begin{lstlisting}
+pandoc -s dissertation.tex --from latex+latex_macros 
+--bibliography=Bibliography\mybib.bib 
+--citeproc --toc -t docx -o dissertation.docx 
+--reference-doc reference_numbering.docx --verbose
+\end{lstlisting}
+
+
